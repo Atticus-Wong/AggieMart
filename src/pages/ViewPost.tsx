@@ -6,6 +6,7 @@ export default function ViewPost() {
     <>
       <Header />
       <h2>View Post page</h2>
+      <div className=""></div>
     </>
   )
 }

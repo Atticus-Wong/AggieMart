@@ -3,8 +3,6 @@ import Home from './pages/Home'
 import MakePost from './pages/MakePost'
 import ViewPost from './pages/ViewPost'
 
-
-
 function App() {
   return (
     <div>
