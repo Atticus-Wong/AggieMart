@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 
 import './styles/navbar.css'
 import './styles/App.css'
+import './styles/item.css'
 
 function App() {
   return (
