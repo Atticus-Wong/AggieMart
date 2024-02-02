@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar";
 import { Link } from "react-router-dom";
 
-export default function ViewPost() {
+export default function MakePost() {
   return (
     <>
       <Navbar />
