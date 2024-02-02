@@ -1,9 +1,10 @@
 .item-item {
     position: relative;
-    width: 210px;
-    height: 300px; 
+    width: 235.64px;
+    height: 312.91px; 
     border-radius: 25px 25px 25px 25px;
     background-color: #d9d9d9;
+    margin-bottom: 2rem;
 }
 
 .item img {
@@ -15,11 +16,13 @@
 
 .item-description {
     position: absolute;
-    margin-top:100%;
+    margin-top:100%;    
     height: 30%;
     width: 100%;
     border-radius: 0px 0px 25px 25px;
     background-color: #d9d2f8;
+    padding-left: 16px;
+    padding-top: 8px;
 }
 
 .text {

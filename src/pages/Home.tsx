@@ -1,12 +1,30 @@
 import Navbar from "../components/navbar";
 import Item from "../components/item";
+import '../styles/Home.css'
+
 export default function Home() {
   return (
     <>
       <Navbar />
       <h2>Home page</h2>
-      <Item />
-      <Item />
+      <div className="main-container">
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+      </div>
     </>
   )
 }
