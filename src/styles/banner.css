@@ -1,0 +1,44 @@
+.banner {
+  background-color: rgb(175, 180, 255);
+  height: 300px;
+  width: 1000px;
+  border-radius: 25px 25px 25px 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.title {
+  margin: 15px;
+  margin-top: -5px;
+}
+
+.slogan {
+  margin: 15px;
+  margin-top: -50px;
+}
+
+.desc {
+  color: white;
+  position: absolute;
+  margin: 15px;
+  margin-bottom: 5px;
+  bottom: 0;
+  left: 0;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 143%;
+  width: 30%;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
