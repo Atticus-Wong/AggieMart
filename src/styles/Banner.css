@@ -1,0 +1,40 @@
+.banner {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../assets/pastel_bg_photo.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 40px;
+  height: 50vh;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.slogan {
+  color: white;
+  position: relative;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.desc {
+  margin-top: 28vh;
+  color: white;
+  padding: 2rem;
+  font-size: 1rem;
+}
