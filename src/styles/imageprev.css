@@ -25,6 +25,7 @@
     position: relative;
     width: 556px;
     height: 556px;
+    box-shadow: 2px 2px 2px 2px gray;
 }
 .small_img1{
     margin-top: 20px;
@@ -32,6 +33,7 @@
     height: 60px;
     background-color: #C7C7C7;
     position: relative;
+    box-shadow: 2px 2px 2px 2px gray;
     /* top: 5%; left: 10%; */
 }
 .small_img2{
