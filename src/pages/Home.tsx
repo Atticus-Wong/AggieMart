@@ -9,21 +9,6 @@ export default function Home() {
       <h2>Home page</h2>
       <div className="main-container">
         <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
       </div>
     </>
   )

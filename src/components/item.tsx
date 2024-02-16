@@ -37,20 +37,113 @@ const Item: React.FC = () => {
       location: "location",
       description: "xxxx",
     },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
+    {
+      price: "Price",
+      itemName: "item",
+      location: "location",
+      description: "xxxx",
+    },
     // ... (other items)
   ]);
 
+
   return (
-    <div className="item-item">
-      <img className="item-preview_img" src=" " alt="image goes here" />
-      <div className="item-description">
-        <div className="item-text">
-          {items.map((item, index) => (
+    <>
+      {items.map((item, index) => (
+        <div className="item-item">
+          <img className="item-preview_img" src=" " alt="image goes here" />
+        <div className="item-description">
+          <div className="item-text">
             <ItemComponent key={index} price={item.price} itemName={item.itemName} location={item.location} />
-          ))}
+          </div>
         </div>
-      </div>
-    </div>
+        </div>
+    ))}
+  </>
   );
 };
 
