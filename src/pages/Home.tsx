@@ -9,21 +9,6 @@ export default function Home() {
       <Banner />
       <div className="main-container">
         <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
       </div>
     </>
   )
