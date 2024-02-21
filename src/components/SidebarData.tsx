@@ -27,13 +27,13 @@ export const SidebarData = [
   },
   {
     title: "MakePost",
-    path: './MakePost',
+    path: '../MakePost',
     icon: <FaIcons.FaRegCircle />,
     cName: 'nav-text'
   },
   {
     title: "ViewPost",
-    path: './ViewPost',
+    path: '../ViewPost',
     icon: <FaIcons.FaRegCircle />,
     cName: 'nav-text'
   },
