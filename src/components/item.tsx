@@ -1,6 +1,5 @@
 import '../styles/item.css'
-import React, { useState } from 'react';
-
+import { ItemData } from './itemData';
 // Define the type for the item
 type Item = {
   price: string;
@@ -30,110 +29,9 @@ const ItemComponent: React.FC<ItemComponentProps> = ({ price, itemName, location
 
 // Main Item functional component
 const Item: React.FC = () => {
-  const [items, setItems] = useState<Item[]>([
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    {
-      price: "Price",
-      itemName: "item",
-      location: "location",
-      description: "xxxx",
-    },
-    // ... (other items)
-  ]);
-
-
   return (
     <>
-      {items.map((item, index) => (
+      {ItemData.map((item, index) => (
         <div className="item-item">
           <img className="item-preview_img" src=" " alt="image goes here" />
         <div className="item-description">
