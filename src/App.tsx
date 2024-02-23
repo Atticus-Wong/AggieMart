@@ -9,6 +9,7 @@ import './styles/navbar.css'
 import './styles/App.css'
 import './styles/item.css'
 import './styles/left_menu.css'
+import './styles/CreateDescription.css'
 function App() {
   return (
     <div>
