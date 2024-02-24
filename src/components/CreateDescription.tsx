@@ -12,7 +12,7 @@ export default function CreateDescription() {
                 <input className ="inputBox" id="email" type="text" placeholder="Email"></input>
             </div>
 
-            <textarea className="descBox" id="description" type="text" placeholder="Description"></textarea>
+            <textarea className="descBox" id="description" placeholder="Description"></textarea>
 
             <h1 id="tagtext">Tags</h1>
 

@@ -12,7 +12,7 @@ export default function Image() {
     const images = [img1, img2, img3, img4, img5, img6];
 
     //returns the link to the chosen image from the array. Set the src in the img elements below.
-    function loadImage(x) {
+    function loadImage(x: any) {
         return images[x];
     }
 
