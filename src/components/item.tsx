@@ -1,12 +1,14 @@
 import '../styles/item.css'
 import { ItemData } from './itemData';
+import { useEffect } from 'react';
+import { useState } from 'react';
 // Define the type for the item
 type Item = {
   price: string;
   itemName: string;
   location: string;
-  previewImage?: string;
-  description?: string;
+  previewImage: string;
+  description: string;
   phoneNumber?: string;
   address?: string;
   email?: string;
@@ -41,12 +43,20 @@ const ItemComponent: React.FC<ItemComponentProps> = ({ price, itemName, location
 
 // Main Item functional component
 const Item: React.FC = () => {
+  // Use state to manage the items
+  const [items, setItems] = useState<Item[]>(ItemData);
+
+  // Use useEffect to update the items when ItemData changes
+  useEffect(() => {
+    setItems(ItemData);
+  }, [ItemData]);
+
   return (
     <>
-      {ItemData.map((item, index) => (
-            <ItemComponent key={index} price={item.price} itemName={item.itemName} location={item.location} previewImage={item.previewImage}/>
-    ))}
-  </>
+      {items.map((item, index) => (
+        <ItemComponent key={index} price={item.price} itemName={item.itemName} location={item.location} previewImage={item.previewImage} />
+      ))}
+    </>
   );
 };
 

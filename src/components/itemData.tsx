@@ -1,4 +1,6 @@
-export const ItemData =  [
+import Item from "./item"
+export const ItemData: Item[] =  [
+    
     {
       price: "Price",
       itemName: "item",

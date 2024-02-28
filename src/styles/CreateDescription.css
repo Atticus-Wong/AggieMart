@@ -1,0 +1,116 @@
+.createDesc {
+    height: 603px;
+    width: 522px;
+    /* background-color: gray; */
+}
+
+#contact {
+    padding-bottom: 20px;
+}
+
+#tagtext {
+    padding-top: 40px;
+    padding-bottom: px;
+}
+.inputs {
+    height: 106px;
+    width: 522px;
+    padding-bottom:40px;
+}
+
+.inputBox {
+    width: 252px;
+    height: 42px;
+    border-radius: 30px;
+}
+
+.inputBox#location {
+    position:relative;
+    left: 15px;
+}
+
+.inputBox#phoneNumber{
+    position:relative;
+    top: 15px;
+}
+
+.inputBox#email{
+    position:relative;
+    top: 15px;
+    left: 15px;
+}
+
+.descBox {
+    width: 516px;
+    height: 264px;
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.descBox[type="text"]::placeholder {
+    text-indent: 210px;
+}
+
+.tag {
+    width: 89px;
+    height: 42px;
+    background-color: #CBCAFF;
+    border-radius: 25px;
+    margin: 10px;
+    text-align: center;
+}
+
+.tag_group_row1 {
+    display:flex;
+    width: 522px;
+    position: relative;
+    left: 42px;
+}
+
+.tag_group_row2 {
+    display:flex;
+    width: 522px;
+    position: relative;
+    left: 152px;
+}
+
+
+
+
+#tag_name {
+    position: relative;
+    top: 9px;
+
+}
+
+/* shifting the cursor over to the right */
+.inputBox[type="text"] {
+    text-indent: 20px;
+}
+
+.inputBox[type="number"] {
+    text-indent: 20px;
+}
+
+/* shifting the background text */
+.inputBox[type="text"]::placeholder {
+    text-indent: 20px;
+}
+
+.list-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0;
+    color: black;
+    background-color: rgb(203, 202, 255);
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .list-button:hover {
+    cursor: pointer;
+  
+  }
