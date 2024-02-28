@@ -50,10 +50,6 @@
     padding-top: 5px;
 }
 
-.descBox[type="text"]{
-
-}
-
 .descBox[type="text"]::placeholder {
     text-indent: 210px;
 }
@@ -103,3 +99,18 @@
 .inputBox[type="text"]::placeholder {
     text-indent: 20px;
 }
+
+.list-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0;
+    color: black;
+    background-color: rgb(203, 202, 255);
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .list-button:hover {
+    cursor: pointer;
+  
+  }
