@@ -49,7 +49,7 @@ const CreateDescription: React.FC= ()  => {
         <div className="createDesc">
             <h1 id="contact">Contact Information</h1>
             <div className="inputs">
-                <input className ="inputBox" id="price" type="text" placeholder="Price ($)" onChange={handleInputChangePrice}></input>
+                <input className ="inputBox" id="price" type="number" placeholder="Price ($)" onChange={handleInputChangePrice}></input>
                 <input className ="inputBox" id="location" type="text" placeholder="Location" onChange={handleInputChangeLocation}></input>
                 <input className ="inputBox" id="phoneNumber" type="text" placeholder="Phone Number" onChange={handleInputChangePhone}></input>
                 <input className ="inputBox" id="email" type="text" placeholder="Email" onChange={handleInputChangeEmail}></input>
