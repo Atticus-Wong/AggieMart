@@ -1,0 +1,48 @@
+.descrip{
+    display: flex;
+    float: right; width: 50%;
+}
+
+
+
+.box{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 486px;
+    height: 100vh;
+    background-color: #BDBDBD;
+    /* box-shadow: 2px 2px 2px 2px gray; */
+    justify-content: start;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 50px,15px;
+    align-items: center;
+}
+
+.item-name{
+    padding: 15px;
+}
+.price{
+    padding: 15px;
+}
+.minidescrip{
+    line-height: normal;
+}
+.about{
+    padding: 10px;
+}
+.list{
+    line-height: normal;
+}
+.contactinfo{
+    padding: 10px;
+}
+.list2{
+    line-height: normal;
+}

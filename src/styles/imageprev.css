@@ -1,5 +1,6 @@
  
 .left{
+    display: inline-block;
     width: 40%;
     padding-left: 5%;
 }
