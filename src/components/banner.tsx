@@ -2,7 +2,9 @@ import '../styles/Banner.css'
 export default function Banner() {
   return (
     <div className="banner">
-      <div className="title"> 
+      
+        <div className='content'>
+        <div className="title"> 
       <h1>Tom Nook's Emporium</h1> 
       </div>
       <div className="slogan"> 
@@ -11,7 +13,7 @@ export default function Banner() {
       <div className="desc">
           <p>Do you prefer Cancel city or plugging and chugging?</p> 
       </div>
-          
+        </div>
     </div>
   );
 }

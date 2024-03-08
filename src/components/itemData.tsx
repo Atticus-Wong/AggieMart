@@ -18,7 +18,7 @@ export const ItemData =  [
       itemName: "shorts",
       location: "Davis, CA",
       description: "xxxx",
-      previewImage: "https://static01.nyt.com/images/2021/05/28/fashion/mens-style/28sp-gear-inyt1/oakImage-1621867392181-superJumbo.jpg"
+      previewImage: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3Jhd3BpeGVsb2ZmaWNlMTRfYmxhbmtfcGxhaW5fYWxsX3doaXRlX3Nob3J0X3NvY2Nlcl9wYW50X21vY2tfdV9lMDA3ZTllYi03ZTllLTRjMmQtOTIzZS1mNGFhM2MwMDhiYThfMS5qcGc.jpg"
     },
     {
       price: "$20",
@@ -32,7 +32,7 @@ export const ItemData =  [
       itemName: "watch",
       location: "San Francisco, CA",
       description: "xxxx",
-      previewImage: "https://wwd.com/wp-content/uploads/2023/10/best-watches-for-men-orient.png?w=1000"
+      previewImage: "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/pass/Evolution-Luxury-Watches-Oris.jpg"
     },
     {
       price: "$80",
@@ -72,7 +72,7 @@ export const ItemData =  [
       itemName: "wallet",
       location: "Oakland, CA",
       description: "xxxx",
-      previewImage: "https://t3.ftcdn.net/jpg/01/36/95/78/360_F_136957824_UtaEl8GatvUO83v3hpbOsrTezEkrC2pX.jpg"    },
+      previewImage: "https://media.istockphoto.com/id/1093288630/photo/businessman-has-no-money-unemployed-and-bankrupt-man-looks-into-his-empty-wallet-stress.webp?b=1&s=170667a&w=0&k=20&c=sED6thMSfe0bhKcLl5mwBhQlbLTOZRK95BTJS2w0taM="    },
     {
       price: "$5",
       itemName: "shirt",
