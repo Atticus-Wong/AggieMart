@@ -28,7 +28,9 @@ type ItemComponentProps = {
 const ItemComponent: React.FC<ItemComponentProps> = ({ price, itemName, location, previewImage }) => (
 
         <div className="item-item">
-          <img className="item-preview_img" src={previewImage} alt="image goes here" />
+          <div className="item-preview_img">
+          <img  src={previewImage} alt="image goes here" />
+          </div>
         <div className="item-description">
           <div className="item-text">
             <div className="item-component">
