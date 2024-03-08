@@ -6,7 +6,7 @@ export default function Navbar() {
       <LeftMenu />
       <nav className="nav">
       
-        <Link to="../Home" className="site-title">Tom Nook's Emporium</Link>
+        <Link to="../Home" className="site-title">Nook's Emporium</Link>
       <ul>
         <li>
           <Link to="../Register" className="navbar-links navbar-register">Register</Link>
