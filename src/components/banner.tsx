@@ -3,13 +3,13 @@ export default function Banner() {
   return (
     <div className="banner">
       <div className="title"> 
-      <h1>Title of our Project</h1> 
+      <h1>Tom Nook's Emporium</h1> 
       </div>
       <div className="slogan"> 
-        <h3>A slogan or something</h3> 
+        <h3>Cancel city or plug and chug?</h3> 
       </div>
       <div className="desc">
-          <p>Description #1</p> 
+          <p>Do you prefer Cancel city or plugging and chugging?</p> 
       </div>
           
     </div>
