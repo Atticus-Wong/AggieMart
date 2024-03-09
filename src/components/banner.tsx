@@ -5,7 +5,7 @@ export default function Banner() {
       
         <div className='content'>
         <div className="title"> 
-      <h1> Nook's Emporium</h1> 
+      <h1>Title</h1> 
       </div>
       <div className="slogan"> 
         <h3>Shop with ease.</h3> 

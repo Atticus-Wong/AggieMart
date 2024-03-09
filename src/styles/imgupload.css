@@ -1,0 +1,7 @@
+.makePost-wrapper {
+  flex-direction: column;
+}
+
+.image-upload-wrapper {
+  display: inline-block;
+}
