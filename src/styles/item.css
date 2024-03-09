@@ -1,18 +1,28 @@
 .item-item {
     position: relative;
-    width: 235.64px;
-    height: 312.91px; 
+    width: 14rem;
+    height: 20rem; 
     border-radius: 25px 25px 25px 25px;
     background-color: #d9d9d9;
     margin-bottom: 2rem;
+    overflow: hidden;
 }
 
-.item img {
-    position:absolute;
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 70%;
-}
+.item-preview_img {
+    width: 100%; /* Make the container fill the item-item width */
+    height: 70%; /* Make the container fill the item-item height */
+    position: absolute; /* Position the container relative to item-item */
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .item-preview_img img {
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    display: block; /* Remove extra space reserved for inline elements */
+  }
 
 .item-description {
     position: absolute;
