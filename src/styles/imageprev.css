@@ -1,88 +1,131 @@
  
 .left{
+    margin-left: 11rem;
     width: 40%;
     padding-left: 5%;
 }
 .square{
     width: 556px;
     height: 556px;
-    background-color: #C7C7C7;
     position: relative;
    
     /* top: 5%; left: 10%; */
 }
 
 .img {
+    margin-top: 4rem;
     border: none;
     color:  black;
     /* padding: 10px 10px ; */
     text-align: center;
     /* position: relative; */
     /* top: 50%; */
+    overflow: hidden;
+    border-radius: 20px;
 
 }
 .img_large{
     position: relative;
     width: 556px;
     height: 556px;
-    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 20px;
 }
 .small_img1{
     margin-top: 20px;
     width: 60px;
     height: 60px;
-    background-color: #C7C7C7;
     position: relative;
-    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 10px;
     /* top: 5%; left: 10%; */
 }
+
+.small_img1:hover {
+    opacity: 0.7;
+}
+
 .small_img2{
     margin-top: 20px;
     width: 60px;
     height: 60px;
-    background-color: #C7C7C7;
     position: relative;
     /* top: 5%; left: 10%; */
 }
+
+.small_img2:hover {
+    opacity: 0.7;
+}
+
+
 .small_img3{
     margin-top: 20px;
     width: 60px;
     height: 60px;
-    background-color: #C7C7C7;
     position: relative;
+    cursor: pointer;
     /* top: 5%; left: 10%; */
 }
+
+.small_img3:hover {
+    opacity: 0.7;
+}
+
+
 .small_img4{
     margin-top: 20px;
     width: 60px;
     height: 60px;
-    background-color: #C7C7C7;
     position: relative;
+    cursor: pointer;
     /* top: 5%; left: 10%; */
 }
+
+.small_img4:hover {
+    opacity: 0.7;
+}
+
+
 .small_img5{
     margin-top: 20px;
     width: 60px;
     height: 60px;
-    background-color: #C7C7C7;
     position: relative;
+    cursor: pointer;
+
     /* top: 5%; left: 10%; */
 }
+
+.small_img5:hover {
+    opacity: 0.7;
+}
+
 .small_img6{
     margin-top: 20px;
     width: 60px;
     height: 60px;
-    background-color: #C7C7C7;
     position: relative;
+    cursor: pointer;
+
     /* top: 5%; left: 10%; */
 }
+
+.small_img6:hover {
+    opacity: 0.7;
+}
+
+.small_img6:active {
+    opacity: 0;
+}
+
+
 
 .siximg{
     display: flex;
     justify-content: space-between;
     padding-left: 2.5rem;
+    width: 515px;
     /* padding-left: 10%; */
 }
+
 
 /* .prev_here{
     text-align: center;

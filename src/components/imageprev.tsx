@@ -2,12 +2,12 @@ import '../styles/imageprev.css'
 
 export default function Image() {
     
-    const img1 = "https://as2.ftcdn.net/v2/jpg/00/99/53/31/1000_F_99533164_fpE2O6vEjnXgYhonMyYBGtGUFCLqfTWA.jpg";
-    const img2 = "https://www.thepackagingcompany.us/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_80269.jpg";
-    const img3 = "https://blognumbers.files.wordpress.com/2010/10/1.jpg";
-    const img4 = "https://storage.needpix.com/rsynced_images/one-706897_1280.jpg";
-    const img5 = "https://pngimg.com/d/number1_PNG14901.png";
-    const img6 = "https://png.pngtree.com/png-clipart/20210411/original/pngtree-number-1-png-image_6212588.jpg";
+    const img1 = "https://scontent.fsac1-2.fna.fbcdn.net/v/t39.30808-6/430284305_10159796828244249_5584620818985808106_n.jpg?stp=dst-jpg_p960x960&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=6pwodmUfNAoAX_GtZiY&_nc_ht=scontent.fsac1-2.fna&oh=00_AfBrLZxHWO3mRb67Y8IkZg5bdQwNR8n-YC6NB_OvmJQ-0A&oe=65F0DD37";
+    const img2 = "https://scontent.fsac1-2.fna.fbcdn.net/v/t39.30808-6/431384314_10159796824564249_8644002607497087591_n.jpg?stp=dst-jpg_p960x960&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cVMdgutSlTUAX9KOJ6o&_nc_ht=scontent.fsac1-2.fna&oh=00_AfBYFqFZtikStngWwgFLi_8R6tOXdWsUXi0f2BA7uySuFA&oe=65F10694";
+    const img3 = "https://scontent.fsac1-1.fna.fbcdn.net/v/t39.30808-6/428697895_10159796824749249_6645952049023729029_n.jpg?stp=dst-jpg_p960x960&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cnXBU8R76-wAX-W9wcU&_nc_ht=scontent.fsac1-1.fna&oh=00_AfCfNsVGCRKcfNbDfskGR82h4DXphRqDX5g_KbnLsme_Fg&oe=65F10386";
+    const img4 = "https://scontent.fsac1-1.fna.fbcdn.net/v/t39.30808-6/431263084_10159796824689249_7048038882326672827_n.jpg?stp=dst-jpg_p960x960&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=SoXavBulyz4AX-kkbjH&_nc_ht=scontent.fsac1-1.fna&oh=00_AfDCKJkj1R913QKOX2TOxrBI5AXp4Nuu1JSRw4NOxf5pIg&oe=65F04EC6";
+    const img5 = "https://scontent.fsac1-2.fna.fbcdn.net/v/t39.30808-6/428697628_10159796824654249_9179999461864652453_n.jpg?stp=dst-jpg_p960x960&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=TiyQBAE9K00AX82aTPx&_nc_ht=scontent.fsac1-2.fna&oh=00_AfADUvQjDu8rFhY7JxmK7BxnB9fxjQ9LtD2s1V_Oa4oJrA&oe=65F07DCE";
+    const img6 = "https://scontent.fsac1-1.fna.fbcdn.net/v/t39.30808-6/431329473_10159796824519249_6403567664321441478_n.jpg?stp=dst-jpg_p960x960&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Qqlvc7QwKtEAX8P45RM&_nc_ht=scontent.fsac1-1.fna&oh=00_AfBBOHaFcgbeHFTv9zsZ8Qc-YFjyIDYYd-BzUvUMPzDGOg&oe=65F18645";
 
     const images = [img1, img2, img3, img4, img5, img6];
 
@@ -29,7 +29,7 @@ export default function Image() {
                 <div className="square">
 
                     <div className="img">
-                        <img className="img_large" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="image goes here"></img>
+                        <img className="img_large" src="https://scontent.fsac1-2.fna.fbcdn.net/v/t39.30808-6/430284305_10159796828244249_5584620818985808106_n.jpg?stp=dst-jpg_p960x960&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=6pwodmUfNAoAX_GtZiY&_nc_ht=scontent.fsac1-2.fna&oh=00_AfBrLZxHWO3mRb67Y8IkZg5bdQwNR8n-YC6NB_OvmJQ-0A&oe=65F0DD37" alt="image goes here"></img>
                         
                     </div>
 

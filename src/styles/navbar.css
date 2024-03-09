@@ -1,13 +1,13 @@
 .nav {
   margin: 0;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   background-color: white;
   justify-content: space-between;
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -17,7 +17,7 @@
 
 .site-title {
   margin: 0 0 0 120px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   columns: black;
 }
@@ -28,7 +28,7 @@
 }
 
 .nav ul {
-  margin: 0 120px 0 0;
+  margin: 0 5rem 0 0;
   padding: 0;
   list-style: none;
   display: flex;
@@ -36,22 +36,24 @@
 }
 
 .navbar-links {
-  padding: 10px 20px;
+  padding: 6px 25px;
   border-radius: 20px;
   margin: 0;
 }
 
 .navbar-login {
-  color: black ;
-  background-color: rgb(203, 202, 255);
+  color: white !important;
+  background-color: rgb(102, 77, 154);
   
 }
 
 .navbar-register {
-  background-color: rgb(102, 77, 154);
-  color: white !important;
+  background-color: rgb(203, 202, 255);
+  color: black !important;
 }
 
 .navbar-links:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
+
+

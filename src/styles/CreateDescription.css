@@ -1,6 +1,9 @@
 .createDesc {
     height: 603px;
     width: 522px;
+    margin-top: 4rem;
+    margin-left: 6rem;
+    display: inline-block;
     /* background-color: gray; */
 }
 
@@ -61,6 +64,15 @@
     border-radius: 25px;
     margin: 10px;
     text-align: center;
+    cursor: pointer;
+}
+
+.tag:hover {
+    opacity: 0.7;   
+}
+
+.tag:active {
+    opacity: 1;
 }
 
 .tag_group_row1 {
@@ -112,5 +124,9 @@
   
   .list-button:hover {
     cursor: pointer;
-  
+    opacity: 0.4;
+  }
+
+  .list-button:active {
+    opacity: 1;
   }
