@@ -12,7 +12,7 @@
   background-color: #ffffff;
   width: 300px;
   height: 100vh;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   position: fixed;
   z-index: 101;
@@ -73,14 +73,21 @@ span {
   margin-left: 16px;
 }
 
-.menu-create-listing {
-  position: absolute;
+.menu-create-listing {;
   bottom: 10vh;
   align-items: center;
-  margin-left: 4rem;
   width: 60%;
+  height: 6.5%;
   background: #c5b6da;
+  margin: 50px auto auto auto;
+  border-radius: 40px;
+  border: 1px solid #7749B1;
+  padding-top: 7.5px;
+  background-color: #CBCAFF;
+}
+
+.menu-create-listing p {
+  display: inline-block;
+  padding-left: 20px;
   text-align: center;
-  margin-top: 10rem;
-  border-radius: 20px;
 }
