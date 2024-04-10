@@ -35,8 +35,14 @@ export default function LeftMenu() {
                 </>
               )
             })}
-            <div className="menu-create-listing">Create Listing</div>
+            {/* <div className="menu-create-listing">Create Listing</div> */}
           </ul>
+
+          <div className="menu-create-listing">
+            <p>+         </p>
+            <p>Create Listing</p>
+          </div>
+
           </nav>
           
           </IconContext.Provider>

@@ -1,0 +1,13 @@
+.post_desc_box {
+    background-color: gray;
+    position: relative;
+    left: 200px;
+    width: 516px;
+    height: 702px;
+}
+
+.name {
+    left: 170px;
+    bottom: -40px;
+}
+
