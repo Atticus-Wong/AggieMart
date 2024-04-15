@@ -1,15 +1,10 @@
-import Navbar from "../components/navbar";
-import Item from "../components/item";
-import Banner from "../components/banner";
-import '../styles/Home.css'
+import '../styles/Home.css';
+import NavBar from '../components/navbar.tsx';
+
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <Banner />
-      <div className="main-container">
-        <Item />
-      </div>
-    </>
+    <div>
+      <NavBar/>
+    </div>
   )
 }
