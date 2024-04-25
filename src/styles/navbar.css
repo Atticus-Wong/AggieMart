@@ -1,10 +1,6 @@
 :root {
-    --davis-blue: #0096FF;
-    --davis-gold: 
-}
-
-* {
-    /* border: 1px solid gray; */
+    --davis-blue: #1B45B7;
+    --davis-gold: 	#CCAD4F;
 }
 
 .navbar {
@@ -13,11 +9,16 @@
     width: 100vw;
     height: 10vh;
     margin: 0px;
+    top: 0px;
+    left: 0px;
     background: linear-gradient(
         90deg,
         var(--davis-blue),
         var(--davis-blue) 100%
     );
+    box-shadow: 0px 3px 10px;
+
+
 }
 
 .nav {
@@ -44,6 +45,14 @@
     margin-left: 1rem;
 }
 
+
+
+.site-title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 #sitelogo {
     height: 70%;
 }
@@ -58,29 +67,31 @@
 }
 
 #accountlogo {
-    height: 60%;
-    position: relative;
-    top: -5%;
+    height: 5vh;
+
 }
 
 #searchbar {
     width: 30%;
-    height: 80%;
+    height: 60%;
 }
 
 #searchbar input {
     width: 100%;
-    height: 100%:
+    height: 100%;
 }
 
 #cartlogo {
-    height: 80%;
+    height: 90%;
+    aspect-ratio: 1;
     position: relative;
-    top: -5%;
+    color: var(--davis-gold);
+    /* box-shadow: 0px 3px 5px; */
+    /* top: -10%; */
 }
 
 #cartlogo:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     cursor: pointer;
 }
 
@@ -88,27 +99,19 @@
     width: 11%;
 }
 
-.account {
-    display: flex;
-    justify-content: center;
+
+.accountLink {
     height: 100%;
-}
-
-.account:hover {
-    transform: scale(1.1);
-}
-
-.account div {
-    position: relative;
-    top: -5%;
     display: flex;
     align-items: center;
-    font-size: 3vw;
 }
 
-.account:hover {
-    color: gold;
+.account-button:hover {
+    /* transform: scale(1.1); */
+    cursor: pointer;
 }
+
+
 
 .nav li input {
     height: 70%;
@@ -179,4 +182,14 @@
 
 .optionslist li:hover {
     color: var(--davis-blue);
+}
+
+
+.account-button {
+    height: 100%;
+    aspect-ratio: 3;
+    background-color: var(--davis-gold);
+    border: none;
+    border-radius: 5px;
+    /* box-shadow: 0px 3px 5px; */
 }

@@ -1,0 +1,111 @@
+* {
+    /* border: 1px solid gray; */
+}
+
+.main-container {
+    position: fixed;
+    top: 10vh;
+    width: 100vw;
+    height: 90vh;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/* Background Image */
+
+.signinbg {
+    position: fixed;
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    top: 10vh;
+    filter: blur(2px);
+}
+
+/* LogIn */
+
+.login-box {
+    box-sizing: border-box;
+    min-width: 300px;
+    width: 30vw;
+    height: 80vh;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: white; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    row-gap: 1rem;
+}
+
+.login-box h2 {
+    margin: 0.8rem;
+}
+
+.sign-in-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 77%;
+    height: 20%;
+    padding: auto;
+    border: none;
+}
+
+.left-align {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.login-box form input {
+    /* padding: 0 0 0 5%; */
+    font-size: 1.3rem;
+    margin-top: 5%;
+    width: 97%;
+    height: 30%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px;
+}
+
+
+
+#submit {
+    margin-top: 5%;
+    width: 77%;
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--davis-blue);
+    border-radius: 5px;
+    color: var(--davis-gold);
+    margin-bottom: 0.75rem;
+    box-shadow: 0px 3px 10px black;
+}
+
+.login-box p {
+    font-size: 0.9rem;
+    text-align:left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-box hr {
+    margin-top: 2rem;
+    width: 85%;
+}
+
+#forgot-password {
+    margin-top: 0.3rem;
+}
+
+
+

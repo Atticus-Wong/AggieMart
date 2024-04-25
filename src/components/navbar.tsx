@@ -8,10 +8,10 @@ import {Link} from 'react-router-dom';
 
 export default function NavBar() {
 
-    const [visible, setIsVisible] = useState(0);
+    const [menuIsVisible, setMenuIsVisible] = useState(false);
 
     function showLeftMenu() {
-        setIsVisible(!visible);
+        setMenuIsVisible(!menuIsVisible);
     }
 
     return (
@@ -19,13 +19,16 @@ export default function NavBar() {
         <nav className="navbar">
             <ul className="nav">
 
-                {/* AggieMart logo */}
+
                 <li>
                     <img id="menulogo" src={menulogo} alt="site logo" onClick={showLeftMenu}/>
                 </li>
 
+                {/* AggieMart logo */}
                 <li>
-                    <img id="sitelogo" src={sitelogo} alt="site logo"/>
+                    <Link to="../Home" className="site-title">
+                        <img id="sitelogo" src={sitelogo} alt="site logo"/>
+                    </Link>
                 </li>
 
                 <li className="empty">
@@ -34,7 +37,7 @@ export default function NavBar() {
 
                 {/* center searcch bar */}
                 <li id="searchbar">
-                    <input type="text" placeholder="Search"/>
+                    <input type="text" placeholder="Search AggieMart"/>
                 </li>
 
                 <li className="empty">
@@ -44,25 +47,33 @@ export default function NavBar() {
                 <li className="account">
                     {/* Account picker drop down menu
                         ask for log in or log out */}
-                    <img id="accountlogo" src={accountlogo} alt="account logo"/>
+                    {/* <Link to="../SignIn" className="accountlink">
+                        <img id="accountlogo" src={accountlogo} alt="account logo"/>
+                    </Link> */}
+                    <Link to="../signin">
+                        <button className="account-button" type="button">Sign In / Register</button>
+                    </Link>
                 </li>
 
                 <li>
                     <img id="cartlogo" src={cartlogo} alt="car logo"/>
                 </li>
 
+            
+
             </ul>
         </nav>
 
         {/* Left Menu slides open */}
-        <div className={`leftmenu ${visible ? 'open' : ''}`}>
+        <div className={`leftmenu ${menuIsVisible ? 'open' : ''}`}>
            <LeftMenu/>
         </div>
 
         {/* This turns the rest of the page gray when left menu is active */}
-        <div className={`graycover ${visible ? 'active' : ''}`} onClick={showLeftMenu}>
+        <div className={`graycover ${menuIsVisible ? 'active' : ''}`} onClick={showLeftMenu}>
 
         </div>
+
         </>
     );
 }
@@ -83,5 +94,7 @@ export function LeftMenu() {
         </div>
     );
 }
+
+
 
 
