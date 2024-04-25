@@ -1,7 +1,6 @@
 import '../styles/navbar.css';
 import sitelogo from '../assets/sitelogo.png';
 import menulogo from '../assets/menulogo.png';
-import accountlogo from '../assets/accountlogo.png'
 import cartlogo from '../assets/cartlogo.png';
 import { useState } from 'react';
 import {Link} from 'react-router-dom';

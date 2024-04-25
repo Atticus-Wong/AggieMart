@@ -1,0 +1,25 @@
+
+
+
+/* Colored text */
+
+.gold-text {
+    color: var(--davis-gold);
+}
+
+/* RegisterBox */
+
+.register-sign-in-form {
+    margin-top: 30%;
+}
+
+#terms-conditions {
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#register-hr {
+    margin-top: 1rem;
+}
