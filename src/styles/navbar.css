@@ -1,59 +1,195 @@
-.nav {
-  margin: 0;
-  width: 100%;
-  height: 5rem;
-  background-color: white;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 0 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.06) 0px 1px 1px);
-  border-bottom: 0.0625rem solid rgb(233, 236, 239); 
+:root {
+    --davis-blue: #1B45B7;
+    --davis-gold: 	#CCAD4F;
 }
+
+.navbar {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(
+        90deg,
+        var(--davis-blue),
+        var(--davis-blue) 100%
+    );
+    box-shadow: 0px 3px 10px;
+
+
+}
+
+.nav {
+    position: absolute;
+    top: 0px;
+    left: 1%;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav li {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 50px;
+    margin-left: 1rem;
+}
+
+
 
 .site-title {
-  margin: 0 0 0 120px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  columns: black;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-.nav a {
-  color: inherit;
-  text-decoration: none;
+#sitelogo {
+    height: 70%;
 }
 
-.nav ul {
-  margin: 0 5rem 0 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+#menulogo {
+    height: 90%;
 }
 
-.navbar-links {
-  padding: 6px 25px;
-  border-radius: 20px;
-  margin: 0;
+#menulogo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
-.navbar-login {
-  color: white !important;
-  background-color: rgb(102, 77, 154);
-  
+#accountlogo {
+    height: 5vh;
+
 }
 
-.navbar-register {
-  background-color: rgb(203, 202, 255);
-  color: black !important;
+#searchbar {
+    width: 30%;
+    height: 60%;
 }
 
-.navbar-links:hover {
-  transform: scale(1.15);
+#searchbar input {
+    width: 100%;
+    height: 100%;
+}
+
+#cartlogo {
+    height: 90%;
+    aspect-ratio: 1;
+    position: relative;
+    color: var(--davis-gold);
+    /* box-shadow: 0px 3px 5px; */
+    /* top: -10%; */
+}
+
+#cartlogo:hover{
+    /* transform: scale(1.1); */
+    cursor: pointer;
+}
+
+.empty {
+    width: 11%;
 }
 
 
+.accountLink {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.account-button:hover {
+    /* transform: scale(1.1); */
+    cursor: pointer;
+}
+
+
+
+.nav li input {
+    height: 70%;
+    border-radius: 5px;
+}
+
+.nav li div {
+    height: 70%;
+}
+
+.leftmenu {
+    position: fixed;
+    height: 90vh;
+    width: 25vw;
+    top: 10vh;
+    left: -25vw;
+    background-color: white;
+    transition: left 0.3s ease;
+    border-top: 3px solid gray;
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 2;
+}
+
+.leftmenu.open {
+    left: 0px;
+    
+}
+
+.graycover.active {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 10vh;
+}
+
+
+.menuoptions {
+    width: 25vw;
+    height: 90vh;
+    margin: 0.2vw;
+}
+
+.menuoptions h1 {
+    font-size: 3vw;
+    margin: 0px;
+}
+
+.optionslist {
+    display: grid;
+    padding: 0px;
+    height: 70%;
+    width: 100%;
+    list-style-type: none;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.optionslist li {
+    display: flex;
+    padding-left: 5%;
+    align-items: center;
+    font-size: 2vw;
+
+}
+
+.optionslist li:hover {
+    color: var(--davis-blue);
+}
+
+
+.account-button {
+    height: 100%;
+    aspect-ratio: 3;
+    background-color: var(--davis-gold);
+    border: none;
+    border-radius: 5px;
+    /* box-shadow: 0px 3px 5px; */
+}
