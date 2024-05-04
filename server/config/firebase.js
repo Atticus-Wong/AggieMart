@@ -3,14 +3,15 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth, GoogleAuthProvider } from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBHhIiNyoPqLhzGLPUVjCI7R47r1CKQaMA",
-  authDomain: "gdsc-23-24.firebaseapp.com",
-  projectId: "gdsc-23-24",
-  storageBucket: "gdsc-23-24.appspot.com",
-  messagingSenderId: "256657458247",
-  appId: "1:256657458247:web:4397d425736f2239d01d62",
-  measurementId: "G-JWE7SZL3LJ"
+  apiKey: import.meta.env.VITE_FB_API_KEY,
+  authDomain: import.meta.env.VITE_FB_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FB_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FB_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FB_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FB_APP_ID,
+  measurementId: import.meta.env.VITE_FB_MEASUREMENT_ID
 };
+
 
 export const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
