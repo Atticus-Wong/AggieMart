@@ -124,7 +124,6 @@
 }
 
 #sign-in-with-google-button {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,8 +143,7 @@
     background: rgb(220, 220, 220) radial-gradient(circle, transparent 50%, rgb(239, 239, 239) 1%) center/15000%;
   }
   .ripple:active {
-    background-color: #c7c7c7;
-    background-size: 100%;
+    background-color: rgb(199, 199, 199);
     transition: background 0s;
   }
   
