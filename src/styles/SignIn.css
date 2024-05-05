@@ -114,6 +114,25 @@
     margin-top: 0.3rem;
 }
 
+#sign-in-with-google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    aspect-ratio: 4/1;
+    border-radius: 50px;
+}
+
+#sign-in-with-google-button p {
+    font-size: 1.1rem;
+}
+
+#sign-in-with-google-button img {
+    height: 1.5rem;
+    aspect-ratio: 1/1;
+}
+
 #cutecow {
     width: 40%;
     aspect-ratio: 1/1;
