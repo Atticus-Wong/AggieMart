@@ -2,7 +2,7 @@ import '../styles/SignIn.css';
 import NavBar from '../components/navbar.tsx';
 import signinbg from '../assets/signin-bg.jpg';
 import cutecow from '../assets/cutecow.jpg';
-import googlelogo from '../assets/google-logo.jpg';
+import googlelogo from '../assets/Google-logo-2.png';
 import {Link} from 'react-router-dom';
 import { auth, googleProvider } from '../../server/config/firebase';
 import { signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth'
@@ -74,7 +74,7 @@ export function LogIn() {
             <p>Don't have an account? <Link to="../Register">Register</Link></p>
             <p>OR</p>
 
-            <button id="sign-in-with-google-button" onClick={signInWithGoogle}>
+            <button className="ripple" id="sign-in-with-google-button" onClick={signInWithGoogle}>
                 <img src={googlelogo}></img>
                 <p>Sign in with Google</p>
             </button>
