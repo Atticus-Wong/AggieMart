@@ -28,7 +28,7 @@ export function LogIn() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    console.log(auth?.currentUser?.email);
+    console.log(auth?.currentUser);
     const signin = async (event) => {
         event.preventDefault();
         try {
@@ -74,7 +74,7 @@ export function LogIn() {
             <p>Don't have an account? <Link to="../Register">Register</Link></p>
             <p>OR</p>
 
-            <button className="ripple" id="sign-in-with-google-button" onClick={signInWithGoogle}>
+            <button className='ripple' id="sign-in-with-google-button" onClick={signInWithGoogle}>
                 <img src={googlelogo}></img>
                 <p>Sign in with Google</p>
             </button>
