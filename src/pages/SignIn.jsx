@@ -2,6 +2,7 @@ import '../styles/SignIn.css';
 import NavBar from '../components/navbar.tsx';
 import signinbg from '../assets/signin-bg.jpg';
 import cutecow from '../assets/cutecow.jpg';
+import googlelogo from '../assets/Google-logo-2.png';
 import {Link} from 'react-router-dom';
 import { auth, googleProvider } from '../../server/config/firebase';
 import { signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth'
@@ -27,7 +28,7 @@ export function LogIn() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    console.log(auth?.currentUser?.email);
+    console.log(auth?.currentUser);
     const signin = async (event) => {
         event.preventDefault();
         try {
@@ -62,7 +63,7 @@ export function LogIn() {
                 <div className="left-align">
                     <input className="email" type="email" placeholder="Email Address" onChange={(e) => {setEmail(e.target.value)} } />
                     <input className="password" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-                    <button onClick={signInWithGoogle}>Sign in with google</button>
+                    {/* <button onClick={signInWithGoogle}>Sign in with google</button> */}
                     <a id="forgot-password" href="https://www.google.com">Forgot Password?</a>
                 </div>
                     <button id="submit" type="submit" onClick={signin}>Sign In</button>
@@ -71,6 +72,14 @@ export function LogIn() {
 
             <hr/>
             <p>Don't have an account? <Link to="../Register">Register</Link></p>
+            <p>OR</p>
+
+            <button className='ripple' id="sign-in-with-google-button" onClick={signInWithGoogle}>
+                <img src={googlelogo}></img>
+                <p>Sign in with Google</p>
+            </button>
+
+
             <img id="cutecow" src={cutecow} alt="cute cow"></img>
         </div>
     );

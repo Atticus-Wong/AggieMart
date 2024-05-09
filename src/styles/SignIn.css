@@ -95,7 +95,16 @@
     border-radius: 5px;
     color: var(--davis-gold);
     margin-bottom: 0.75rem;
-    box-shadow: 0px 3px 10px black;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#submit:hover {
+    opacity: 0.9;
+}
+
+#submit:active {
+    opacity: 1.0;
 }
 
 .login-box p {
@@ -112,6 +121,38 @@
 
 #forgot-password {
     margin-top: 0.3rem;
+}
+
+#sign-in-with-google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    aspect-ratio: 5.5/1;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.5s;
+  }
+  .ripple:hover {
+    background: rgb(220, 220, 220) radial-gradient(circle, transparent 50%, rgb(239, 239, 239) 1%) center/15000%;
+  }
+  
+
+#sign-in-with-google-button p {
+    font-size: 1rem;
+}
+
+#sign-in-with-google-button img {
+    height: 1.5rem;
+    aspect-ratio: 1/1;
 }
 
 #cutecow {
