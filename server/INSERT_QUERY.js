@@ -1,11 +1,11 @@
 import sql from 'mssql'
 
 const config = {
-  user: 'AtticusWong', 
-  password: '2653BinaryOnly', 
-  server: 'mysqlserver2653.database.windows.net', 
+  user: process.env.VITE_DB_USER,
+  password: process.env.VITE_DB_PASS, 
+  server: process.env.VITE_DB_SERVER, 
   port: 1433, 
-  database: 'GDSC', 
+  database: process.env.VITE_DB_NAME, 
   authentication: {
       type: 'default'
   },
