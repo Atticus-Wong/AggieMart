@@ -1,0 +1,59 @@
+.createpost-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 90vh;
+    top: 10vh;
+
+    background-color: rgb(0,0,0,0.3);
+}
+
+.createpost-prompt-box {
+    height: 80%;
+    width: 40%;
+    border-radius: 20px;
+    padding-left: 2rem;
+
+    background-color: white;
+}
+
+#createpost-name-desc-form {
+    height: 100%;
+    width: 100%;
+}
+
+#createpost-name-input {
+    width: 50%;
+    height: 7%;
+}
+
+#createpost-desc-input {
+    width: calc(100% - 2rem);
+    height: 30%;
+    resize: none;
+}
+
+
+#name-desc-submit-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 10px;
+    height: 7%;
+    width: calc(100% - 2rem);
+}
+
+#name-desc-submit {
+    width: 20%;
+    height: 100%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+
+    background-color: var(--davis-blue);
+    color: var(--davis-gold)
+
+}
+
