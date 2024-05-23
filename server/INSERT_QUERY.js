@@ -1,39 +1,70 @@
 import sql from 'mssql'
+import dotenv from 'dotenv'
+import { config, SqlConnect } from './db.js';
 
-const config = {
-  user: process.env.VITE_DB_USER,
-  password: process.env.VITE_DB_PASS, 
-  server: process.env.VITE_DB_SERVER, 
-  port: 1433, 
-  database: process.env.VITE_DB_NAME, 
-  authentication: {
-      type: 'default'
-  },
-  options: {
-      encrypt: true
-  }
-};
+dotenv.config();
 
-console.log("Starting...");
-connectAndQuery();
-
-
-async function connectAndQuery() {
+async function InsertUserQuery(first_name, last_name, email, number, location, password) {
   try {
-      var poolConnection = await sql.connect(config);
+    SqlConnect();
+    var poolConnection = await sql.connect(config);
 
-      console.log("Inserting a new row into the accounts table...");
-      await poolConnection.request().query(`
+    console.log("Inserting a new row into the accounts table...");
+    var resultSet = await poolConnection.request().query(`
           INSERT INTO accounts (first_name, last_name, email, phone_number, location, password) 
-          VALUES ('test_first_t', 'test_last_t', 'test@gmail.com', '1234567890', 'Davis', 'password')
+          VALUES ('${first_name}', '${last_name}', '${email}', '${number}', '${location}', '${password}')
       `);
 
-      console.log("Row inserted successfully.");
+    console.log("Row inserted successfully.");
 
-      // Close the connection
-      await poolConnection.close();
+    // Close the connection
+    await poolConnection.close();
   } catch (err) {
-      console.log("test");
-      console.error("Error:", err.message);
+    console.error("Error:", err.message);
   }
+  return resultSet;
+}
+
+InsertItemQuery("test1", 20, "Davis, CA");
+async function InsertItemQuery(name, price, location) {
+  try {
+    var poolConnection = await sql.connect(config);
+
+    console.log("Inserting a new row into the accounts table...");
+    var resultSet = await poolConnection.request().query(`
+          INSERT INTO listings (name, price, location) 
+          VALUES ('${name}', '${price}', '${location}')
+      `);
+
+    console.log("Row inserted successfully.");
+
+    // Close the connection
+    await poolConnection.close();
+  } catch (err) {
+    console.error("Error:", err.message);
+  }
+  return resultSet;
+}
+
+async function InsertDescriptionQuery(description, img1, img2, img3, img4, img5, img6) {
+  try {
+    SqlConnect();
+    var poolConnection = sql.connect(config);
+
+    var resultSet = await poolConnection.request().query(`
+      INSERT INTO details 
+      VALUES ('${description}', )
+    `);
+  }
+  catch (err) {
+    throw err;
+  }
+
+  return resultSet;
+}
+
+export {
+  InsertUserQuery,
+  InsertItemQuery,
+  InsertDescriptionQuery
 }
