@@ -1,5 +1,5 @@
 import { SqlConnect, config } from './db.js'
-import sql from 'mssql'
+import sql, { pool } from 'mssql'
 
 async function GetXTenItems(x, y) {
   SqlConnect();
@@ -32,10 +32,21 @@ async function GetDescriptionObject(id) {
 
   return resultSet;
 }
+async function GetOneUserQueries(id) {
+  SqlConnect();
+  var poolConnections = sql.connect(config);
 
+  const resultSet = await poolConnections.request().query(`
+    SELECT * FROM LISTINGS
+    WHERE
+    user_id = ${id}
+  `)
+  return resultSet;
+}
 export {
   GetXTenItems,
   GetDescriptionObject,
-  nextTenItems
+  nextTenItems,
+  GetOneUserQueries
 }
 
