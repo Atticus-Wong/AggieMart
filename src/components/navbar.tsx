@@ -50,7 +50,7 @@ export default function NavBar() {
                         <img id="accountlogo" src={accountlogo} alt="account logo"/>
                     </Link> */}
                     <Link to="../signin">
-                        <button className="account-button" type="button">Sign In / Register</button>
+                        <button className="account-button" type="button">Sign In</button>
                     </Link>
                 </li>
 
