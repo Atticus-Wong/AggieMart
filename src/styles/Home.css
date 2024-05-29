@@ -1,1 +1,165 @@
+.homepage-container {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    top: 10vh;
+    height: 145vh;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    z-index: -2;
+}
+
+.ad-deals-container {
+    margin-top: 3rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 95vw;
+    aspect-ratio: 2.35 / 1;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.ad-deals-container .ad1 {
+    width: 48%;
+    height: 100%;
+
+    background-color: gray;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.deals-container {
+    width: 48%;
+    height: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.deal1-container {
+    width: 100%;
+    height: 40%;
+
+    border: 1px solid black;
+}
+
+.deal1-container h2 {
+    margin-left: 1rem;
+}
+
+.deal1-deals {
+    height: 70%;
+    width: 99%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.deal1-deal {
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fivestars {
+    height: 1.2rem;
+}
+
+.deal-previmg {
+    margin-top: 0.1rem;
+    width: 100%;
+    aspect-ratio: 1.90/1;
+    object-fit: cover;
+}
+
+.deal1-deal p {
+    margin: 0px;
+}
+
+.deal1-deal h3 {
+    margin: 0px;
+}
+
+.deal2-container {
+    width: 100%;
+    height: 55%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.deal2-container .deal2-deal {
+    height: 100%;
+    width: 45%;
+    border: 1px solid black;
+}
+
+.sale-pic {
+    object-fit: cover;
+}
+
+.today-deal h2{
+    margin-left: 1rem;
+}
+
+.top-deal {
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.top-deal-previmg {
+    margin-top: 0.1rem;
+    width: 60%;
+    aspect-ratio: 1.90/1;
+    object-fit: cover;
+}
+
+.categories-container {
+    border: 1px solid black;
+}
+
+.benefits-container {
+    width: 95vw;
+    height: 15rem;
+
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.benefits-container img {
+    height: 83%;
+}
+
+.view-allposts-link {
+    display: flex;
+    justify-content: center;
+}
+
+.view-allposts-button {
+    margin: auto;
+    height: 7rem;
+    width: 30rem;
+    font-size: 3rem;
+    border-radius: 2rem;
+    background-color: var(--davis-blue);
+    color: gold;
+}
