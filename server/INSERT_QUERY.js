@@ -7,7 +7,7 @@ dotenv.config();
 async function InsertUserQuery(first_name, last_name, email, number, location, password) {
   try {
     SqlConnect();
-    var poolConnection = await sql.connect(config);
+    var poolConnection = sql.connect(config);
 
     console.log("Inserting a new row into the accounts table...");
     var resultSet = await poolConnection.request().query(`
@@ -25,10 +25,10 @@ async function InsertUserQuery(first_name, last_name, email, number, location, p
   return resultSet;
 }
 
-InsertItemQuery("test1", 20, "Davis, CA");
 async function InsertItemQuery(name, price, location) {
   try {
-    var poolConnection = await sql.connect(config);
+    SqlConnect();
+    var poolConnection = sql.connect(config);
 
     console.log("Inserting a new row into the accounts table...");
     var resultSet = await poolConnection.request().query(`

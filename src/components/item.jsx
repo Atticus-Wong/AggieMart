@@ -1,7 +1,6 @@
 import sql from 'mssql'
 import dotenv from 'dotenv'
-import app from 'express'
-import { config, connectAndQuery } from '../../server/config/db.js'
+import { config, SQlconnect } from '../../server/config/db.js'
 
 async function runDB(name, phone_number, price) {
 
