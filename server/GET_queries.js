@@ -1,18 +1,22 @@
 import { SqlConnect, config } from './db.js'
-import sql, { pool } from 'mssql'
+import sql from 'mssql'
 
 async function GetXTenItems(x, y) {
-  SqlConnect();
-  var poolConnections = sql.connect(config);
+  try {
+    SqlConnect();
+    var poolConnections = sql.connect(config);
 
-  const resultSet = await poolConnections.request().query(`
+    const resultSet = await poolConnections.request().query(`
     SELECT * FROM LISTINGS
     WHERE
     list_id BETWEEN
     ${x} AND ${y}
   `);
 
-  return resultSet;
+    return resultSet;
+  } catch (e) {
+    console.error(e);
+  }
 }
 
 async function nextTenItems(x, y) {
@@ -20,28 +24,34 @@ async function nextTenItems(x, y) {
 }
 
 async function GetDescriptionObject(id) {
+  try {
+    SqlConnect();
+    var poolConnections = sql.connect(config);
 
-  SqlConnect();
-  var poolConnections = sql.connect(config);
-
-  const resultSet = await poolConnections.request().query(`
+    const resultSet = await poolConnections.request().query(`
     SELECT * FROM DETAILS 
     WHERE 
     list_id = ${id}
   `);
-
-  return resultSet;
+    return resultSet;
+  } catch (e) {
+    console.error(e);
+  }
 }
 async function GetOneUserQueries(id) {
-  SqlConnect();
-  var poolConnections = sql.connect(config);
+  try {
+    SqlConnect();
+    var poolConnections = sql.connect(config);
 
-  const resultSet = await poolConnections.request().query(`
+    const resultSet = await poolConnections.request().query(`
     SELECT * FROM LISTINGS
     WHERE
     user_id = ${id}
   `)
-  return resultSet;
+    return resultSet;
+  } catch (e) {
+    console.error(e);
+  }
 }
 export {
   GetXTenItems,
