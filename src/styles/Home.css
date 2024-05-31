@@ -145,11 +145,20 @@
 
 }
 
+.home-bg {
+    position: fixed;
+    left: -2rem;
+    width: 120vw;
+    filter: blur(2px);
+    z-index: -3;
+}
+
 .benefits-container img {
     height: 83%;
 }
 
 .view-allposts-link {
+    margin: 0px;
     display: flex;
     justify-content: center;
 }

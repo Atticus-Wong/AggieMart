@@ -13,6 +13,7 @@ export default function Home() {
     <div>
       <NavBar/>
 
+      {/* <img className="home-bg" src="https://thumbs.wbm.im/pw/small/a3c669141c1bd0ed5446897d7b68225f.jpg"></img> */}
 
       <div className="homepage-container">
 

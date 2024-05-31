@@ -10,12 +10,47 @@
     overflow-x: hidden;
 }
 
+.hyphen {
+
+}
+
+.allposts-bg {
+    position: fixed;
+    filter: blur(2px);
+    width: 120vw;
+    left: -5rem;
+    z-index: -2;
+    overflow-x: hidden;
+}
+
+.pricefilter {
+    width: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricefilter input {
+    width: 2rem;
+    height: 1.75rem;
+}
+
 .products-sidebar {
     position: sticky;
+    padding-left: 2rem;
     width: 20vw;
     height: 80vh;
     top: 1rem;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    background-color: lightskyblue;
+    border-radius: 2rem;
+}
+
+hr {
+    margin-top: 2rem;
+    width: 80%;
 }
 
 .all-products {
